@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+$theme-colors: (
+  primary: #242582,
+  info: #f64c72,
+  dark: black
+);
+
+$border-radius: 1.2rem;
+$border-radius-lg: 1.2rem;
+$border-radius-sm: 1.2rem;
+$enable-shadows: true;
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Finlandica', sans-serif;
+}
+
+.hover-light:hover {
+  background-color: #6600cc0c;
+  cursor: pointer;
+}
+
+.hover-dark:hover {
+  background-color: #6600cc7c;
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hover-icon:hover {
+  color: map-get($map: $theme-colors, $key: primary);
+  cursor: pointer;
+}
+
+@import '~bootstrap/scss/bootstrap';
+
+.midFont {
+  font-size: 15px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.tinyFont {
+  font-size: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@import './components/SlidingSideBar/bar';

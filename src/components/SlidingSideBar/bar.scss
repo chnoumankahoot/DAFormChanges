@@ -1,0 +1,58 @@
+.bar-container {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.bar-content {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+.bar-content-fullscreen {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 480px) {
+  .bar-content {
+    width: 60%;
+  }
+}
+
+.bar-visible {
+  visibility: visible;
+}
+
+.bar-visible > div {
+  top: 0%;
+  right: 0%;
+}
+
+.bar-collapsed {
+  visibility: collapse;
+}
+
+.bar-collapsed > div {
+  top: 0%;
+  right: -100%;
+}
+
+#bar-body {
+  padding: 0.75rem;
+}

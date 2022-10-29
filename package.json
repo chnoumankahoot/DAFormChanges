@@ -1,0 +1,46 @@
+{
+  "name": "google-login",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "date-fns": "^2.28.0",
+    "moment": "^2.29.1",
+    "node-sass": "4.14.0",
+    "prettier": "^1.18.2",
+    "qs": "^6.5.2",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-icons": "^1.4.0",
+    "react-bootstrap-submenu": "^1.0.3",
+    "react-content-loader": "^6.0.3",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^16.8.6",
+    "react-multi-select-component": "^4.2.5",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^7.0.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start:stage": "REACT_APP_STAGING=true react-scripts start",
+    "build:stage": "REACT_APP_STAGING=true react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
